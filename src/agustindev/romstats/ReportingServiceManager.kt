@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.romstats
+package agustindev.romstats
 
 import android.app.AlarmManager
 import android.app.PendingIntent

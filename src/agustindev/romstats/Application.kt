@@ -1,4 +1,4 @@
-package android.romstats
+package agustindev.romstats
 
 import android.app.NotificationChannel
 import android.app.NotificationManager

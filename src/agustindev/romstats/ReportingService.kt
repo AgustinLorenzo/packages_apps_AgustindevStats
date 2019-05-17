@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.romstats
+package agustindev.romstats
 
 import android.app.NotificationManager
 import android.app.PendingIntent
@@ -113,7 +113,7 @@ class ReportingService : Service() {
                 Log.d(Const.TAG, "SERVICE: ROM Name=$romName")
                 Log.d(Const.TAG, "SERVICE: ROM Version=$romVersion")
 
-                // report to the rrstats service
+                // report to the agustindevstats service
                 val headers = HashMap<String, String?>()
                 headers["deviceHash"] = deviceId
                 headers["deviceName"] = deviceName

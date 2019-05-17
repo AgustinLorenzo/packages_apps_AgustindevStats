@@ -15,7 +15,7 @@
 -->
 
 <resources>
-    <string name="app_name" translatable="false">RR Stats</string>
+    <string name="app_name" translatable="false">Agustindev Stats</string>
 
     <!-- Main -->
     <string name="main_title">Anonymous Usage Data</string>
@@ -76,8 +76,8 @@
     <string name="pref_info_changelog">Change log</string>
     <string name="pref_info_changelog_desc">Show the change log</string>
     <string name="pref_info_website">Google+</string>
-    <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
-    <string name="notification_channel_title">RR Stats</string>
+    <string name="pref_info_website_url">https://stats.agustindev.qnsystem.com/stats.php</string>
+    <string name="notification_channel_title">Agustindev Stats</string>
     <string name="notification_channel_desc">Opt into anonymous statistics</string>
 
 </resources>

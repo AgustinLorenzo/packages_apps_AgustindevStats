@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.romstats
+package agustindev.romstats
 
 import android.annotation.SuppressLint
 import android.content.ComponentName
@@ -35,7 +35,7 @@ import java.security.MessageDigest
 import java.util.Locale
 
 object Utilities {
-    const val SETTINGS_PREF_NAME = "ROMStats"
+    const val SETTINGS_PREF_NAME = "AgustindevStats"
     const val NOTIFICATION_ID = 1
 
     // if the last char of the link is not /, add it
@@ -53,13 +53,13 @@ object Utilities {
             return returnUrl
         }
 
-    val device: String = if (Const.DEBUG) Build.DEVICE else SystemProperties.get("ro.rr.device")
+    val device: String = if (Const.DEBUG) Build.DEVICE else SystemProperties.get("ro.aosip.device")
 
     val modVersion: String = SystemProperties.get("ro.build.display.id")
 
     const val romName: String = Const.ROMNAME
 
-    const val romVersion: String = Const.RR_VERSION
+    const val romVersion: String = Const.ROM_VERSION
 
     val romVersionHash: String?
         get() {
@@ -166,7 +166,7 @@ object Utilities {
         val cookieFile = File(dir, "hide_icon")
 
         val p = context.packageManager
-        val componentToDisable = ComponentName("android.romstats", "android.romstats.AnonymousStats")
+        val componentToDisable = ComponentName("agustindev.romstats", "agustindev.romstats.AnonymousStats")
         if (cookieFile.exists()) {
             // exist, hide icon
             p.setComponentEnabledSetting(
