@@ -161,7 +161,7 @@ class AnonymousStats: AppCompatActivity() {
             mPersistentOptout = preferenceManager.findPreference(Const.ANONYMOUS_OPT_OUT_PERSIST) as CheckBoxPreference
             mViewStats = preferenceManager.findPreference(PREF_VIEW_STATS) as Preference
             mViewStats?.setOnPreferenceClickListener {
-                val uri = Uri.parse(Const.VIEW_URL + "stats")
+                val uri = Uri.parse(Const.VIEW_URL)
                 startActivity(Intent(Intent.ACTION_VIEW, uri))
                 true
             }
@@ -185,14 +185,6 @@ class AnonymousStats: AppCompatActivity() {
             }
 
             mPrefAboutVersion.title = versionString
-
-            val aboutWesbite = preferenceManager.findPreference(PREF_WEBSITE) as Preference
-            aboutWesbite.onPreferenceClickListener = Preference.OnPreferenceClickListener {
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(resources.getString(R.string.pref_info_website_url)))
-                startActivity(intent)
-
-                false
-            }
 
             var mPrefHolder: Preference
             /* Experimental feature 2 */
@@ -278,7 +270,6 @@ class AnonymousStats: AppCompatActivity() {
         private const val PREF_LAST_REPORT_ON = "pref_last_report_on"
         private const val PREF_REPORT_INTERVAL = "pref_reporting_interval"
         private const val PREF_ABOUT = "pref_about"
-        private const val PREF_WEBSITE = "pref_website"
 
         fun getPreferences(context: Context): SharedPreferences {
             return context.getSharedPreferences(Utilities.SETTINGS_PREF_NAME, 0)
