@@ -12,8 +12,8 @@ object Const {
 
     const val STATS_URL = "https://stats.agustindev.qnsystem.com/"
     const val VIEW_URL = "https://stats.agustindev.qnsystem.com/"
-    const val ROM_VERSION = "9.0"
-    const val ROMNAME = "AOSiP by @agustindev"
+    const val ROM_VERSION = "10.0"
+    const val ROMNAME = "AOSiP-Q by @agustindev"
     const val TIMEFRAME = 1
     val DEBUG = BuildConfig.DEBUG
 }
